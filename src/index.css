@@ -1,13 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply font-sans;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* For WebKit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5f6f52; /* Scrollbar color */
+  border-radius: 10px; /* Adjust border radius as needed */
+  border: 3px solid #f1f1f1; /* Adds padding around the scrollbar */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin; /* or 'auto' */
+  scrollbar-color: #5f6f52 #f1f1f1; /* Scrollbar color and track color */
+}
+
+.outline-text {
+  position: relative;
+  color: transparent;
+  -webkit-text-stroke: 0.1rem #495057; /* Width and color of the outline */
+}
+
+.outline-text::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  color: #495057;
 }
