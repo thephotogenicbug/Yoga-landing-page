@@ -60,7 +60,9 @@ const Footer = () => {
           <Icon icon="mdi:youtube" className="text-[25px] text-[#5F6F52]" />
         </div>
         <div>
-          <p>&copy; 2024 Naveen Kumar. All rights reserved. </p>
+          <p>
+            &copy; {new Date().getFullYear()} Naveen Kumar. All rights reserved.{" "}
+          </p>
         </div>
       </div>
     </div>
