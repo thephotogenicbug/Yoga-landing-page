@@ -21,12 +21,22 @@
 
 ## 🛠 Tech Stack
 
-| Technology           | Description                            |
-|----------------------|----------------------------------------|
-| **React**            | Frontend framework                     |
-| **Tailwind CSS**     | Utility-first CSS framework            |
-| **@iconify/react**   | Icon support using thousands of icons  |
-| **SplideJS**         | Image/content carousel                 |
-| **Cloudinary**       | Optimized image hosting CDN            |
+| Technology             | Description                                                                 |
+|------------------------|-----------------------------------------------------------------------------|
+| [**React**](https://reactjs.org/)             | JavaScript library for building component-based UIs                      |
+| [**Tailwind CSS**](https://tailwindcss.com/)  | Utility-first CSS framework for rapid UI development                     |
+| [**@iconify/react**](https://www.npmjs.com/package/@iconify/react) | Unified icon framework supporting 100K+ icons from different sets        |
+| [**SplideJS**](https://splidejs.com/integration/react-splide/)    | Lightweight, flexible and accessible slider/carousel library for React  |
+| [**Cloudinary**](https://cloudinary.com/)     | Image & video management platform with CDN delivery & optimization       |
 
 ---
+
+## 🎨 Figma Design Credit
+
+This project is inspired by the following Figma design:
+
+**🔗 [Modern Yoga Fitness Web Design - Community](https://www.figma.com/design/ozzEQ3Yg2wx1FCFm2NcMym/Modern-Yoga-Fitness-Web-Design--Community-?node-id=0-1&p=f&t=RfzmEwmCQwA9wflf-0)**  
+Credits to the original Figma designer(s) for the layout inspiration.
+
+---
+
