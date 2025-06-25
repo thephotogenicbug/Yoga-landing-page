@@ -13,22 +13,22 @@ const Membership = () => {
         />
 
         {/* Content Box */}
-        <div className="absolute inset-0 flex flex-col sm:flex-row justify-end items-center px-4 mt-20 sm:mt-[150px]">
-          <div className="bg-white rounded-lg p-6 sm:p-10 w-full max-w-[95%] sm:max-w-[600px] shadow-lg">
-            <h1 className="text-[24px] sm:text-[30px] font-medium mb-2">
+        <div className="absolute inset-0 flex flex-col sm:flex-row justify-end items-center px-4 mt-10 sm:mt-[40px]">
+          <div className="bg-[#5F6F52] rounded-lg p-6 sm:p-10 w-full max-w-[95%] sm:max-w-[600px] shadow-lg shadow-gray-800/60">
+            <h1 className="text-[24px] text-white sm:text-[30px] font-medium mb-2">
               Free 30-Day Membership
             </h1>
-            <p className="text-[14px] sm:text-[16px] tracking-wide leading-relaxed">
+            <p className="text-[14px] text-white sm:text-[16px] tracking-wide leading-relaxed">
               At arcu neque aliquet laoreet. Id egestas mauris tincidunt ut
               nulla cras. Non eget sem curabitur vehicula diam integer. Magna
               tortor dignissim imperdiet pulvinar ante sed metus consequat in.
               Feugiat id ipsum lacinia nec nunc odio pellentesque.
             </p>
             <div className="mt-6 sm:mt-10 flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <button className="bg-[#5F6F52] text-white px-6 py-3 rounded-md font-medium">
+              <button className="bg-[#212529] text-white px-6 py-3 rounded-md font-medium">
                 Book A Session
               </button>
-              <button className="font-medium text-[16px] sm:text-[18px] text-[#212529] px-6 py-3 rounded-md flex items-center gap-2">
+              <button className="font-medium text-[16px] sm:text-[18px] text-[#ffff] px-6 py-3 rounded-md flex items-center gap-2">
                 Contact Us <Icon icon="pepicons-print:arrow-right-circle" />
               </button>
             </div>

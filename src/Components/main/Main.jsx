@@ -84,7 +84,7 @@ const Main = () => {
           />
           {/* Desktop Hero Image */}
           <img
-            src="https://res.cloudinary.com/dv5jjlsd7/image/upload/v1725778961/yoga-webdesign/background_pvkwhw.png"
+            src="https://res.cloudinary.com/dv5jjlsd7/image/upload/v1750839589/yoga-webdesign/background_kfl8iz.png"
             className="w-full h-full object-cover hidden sm:block"
             alt="Hero Desktop"
           />
