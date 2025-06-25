@@ -11,17 +11,10 @@ const Main = () => {
 
   return (
     <>
-      <div className="relative h-screen">
-        {/* Backdrop Overlay when Menu is Open */}
-        {menuOpen && (
-          <div
-            onClick={() => setMenuOpen(false)}
-            className="fixed inset-0 z-0 bg-black/30 backdrop-blur-sm sm:hidden"
-          ></div>
-        )}
-
+      {/* Page Content */}
+      <div className="relative z-10">
         {/* Navbar */}
-        <nav className="absolute top-0 left-0 w-full bg-transparent text-white p-4 z-10">
+        <nav className="absolute top-0 left-0 w-full p-4 z-50">
           <div className="mx-auto max-w-7xl flex flex-col sm:flex-row justify-between items-center gap-y-4">
             {/* Logo & Hamburger */}
             <div className="w-full flex justify-between items-center sm:w-auto">
@@ -31,18 +24,20 @@ const Main = () => {
                 alt="logo"
               />
               <button
-                className="sm:hidden text-[#343A40] text-3xl"
+                className="sm:hidden text-[#343A40] text-3xl z-50"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 <Icon icon={menuOpen ? "ic:round-close" : "ci:menu-alt-01"} />
               </button>
             </div>
 
-            {/* Nav Links */}
+            {/* Mobile & Desktop Nav Links */}
             <ul
-              className={`flex flex-col sm:flex-row gap-4 sm:gap-10 text-[#343A40] items-center transition-all duration-300 ${
-                menuOpen ? "block" : "hidden"
-              } sm:flex`}
+              className={`${
+                menuOpen ? "flex" : "hidden"
+              } sm:flex flex-col sm:flex-row gap-4 sm:gap-10 text-[#343A40] items-center 
+              bg-white sm:bg-transparent p-6 sm:p-0 rounded-md sm:rounded-none 
+              shadow sm:shadow-none absolute sm:static top-[70px] left-4 right-4 z-40 sm:z-auto`}
             >
               <li>
                 <a href="#" className="font-medium">
@@ -56,7 +51,7 @@ const Main = () => {
               </li>
               <li>
                 <a href="#" className="font-medium flex items-center gap-2">
-                  Our Facility
+                  Our Facility{" "}
                   <Icon icon="solar:round-alt-arrow-down-outline" />
                 </a>
               </li>
@@ -80,22 +75,22 @@ const Main = () => {
         </nav>
 
         {/* Hero Section */}
-        {/* Hero Section */}
-        <div className="h-full w-full relative">
-          {/* Mobile Portrait Image */}
+        <div className="relative w-full h-screen overflow-hidden">
+          {/* Mobile Hero Image */}
           <img
             src="https://res.cloudinary.com/dv5jjlsd7/image/upload/v1750835828/yoga-webdesign/sonnie-hiles-rX8gBeg2WM0-unsplash_xjdjup.jpg"
-            className="w-full h-[700px] object-cover sm:hidden"
+            className="w-full h-full object-cover sm:hidden"
             alt="Hero Mobile"
           />
-          {/* Desktop/Tablet Landscape Image */}
+          {/* Desktop Hero Image */}
           <img
             src="https://res.cloudinary.com/dv5jjlsd7/image/upload/v1725778961/yoga-webdesign/background_pvkwhw.png"
-            className="w-full h-[800px] md:h-[900px] object-cover hidden sm:block"
+            className="w-full h-full object-cover hidden sm:block"
             alt="Hero Desktop"
           />
 
-          <div className="absolute inset-0 mx-auto max-w-7xl flex flex-col items-center sm:items-start justify-center px-4 mt-32 sm:mt-[250px] text-center sm:text-left">
+          {/* Hero Text Content */}
+          <div className="absolute inset-0 mx-auto max-w-7xl flex flex-col items-center sm:items-start justify-center px-4 text-center sm:text-left z-20">
             <h1 className="text-[32px] sm:text-[48px] md:text-[60px] font-medium text-[#495057] tracking-wide">
               YOGA FIRST
             </h1>
@@ -125,7 +120,8 @@ const Main = () => {
       <Team />
       <Membership />
       <Footer />
-      <div className="mb-10"></div>
+
+      <div className="mb-10" />
     </>
   );
 };
